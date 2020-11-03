@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.bgimg {
+    background: url("https://cdn-media-1.freecodecamp.org/images/TKIz7QINBW86qDpRxZj03KU7DiMWcMW08H25");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#main {
+    background-color:rgba(189, 39, 122, 0.7);
+    color: white;
+    padding: 30px;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+#main h1 {
+    font-size: 50px;
+    margin: 50px auto 10px auto;
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+    font-size: 25px;
+}
+
+form {
+    width: 700px;
+    margin: 50px auto;
+    background-color: rgba(27, 4, 17, 0.8);
+    padding: 50px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+input {
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 97%;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+select {
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    height: 30px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.gender {
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin-bottom: 10px;
+    width: 20px;
+    vertical-align: middle;
+}
+
+.interest {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    margin-bottom: 10px;
+    width: 20px;
+    vertical-align: middle;
+}
+
+.comment {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    padding: 10px;
+    font-size: 20px;
+    width: 97%;
+}
+
+button {
+    padding: 2px 5px;
+    min-width: 80px;
+    width: 100%;
+    cursor: pointer;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 15px;
+
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/12dd04522d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/1/1e/RPC-JP_Logo.png" alt="logo">
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#get-started">HOME</a></li>
+                <li><a class="nav-link" href="#features">FEATURE</a></li>
+                <li><a class="nav-link" href="#demo">DEMO</a></li>
+                <li><a class="nav-link" href="#price">PRICE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="get-started" id="get-started">
+            <form action="https://www.freecodecamp.com/email-submit" method="GET">
+                <h2>Let's code with us!</h2>
+                <input type="email" name="email" id="email" required placeholder="insert email">
+                <button type="submit" id="submit">GET STARTED</button>
+            </form>
+        </div>
+        <div class="features" id="features">
+            <div class="feature1 feature">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <div class="desc">
+                    <p class="feature-title">Learn With Coach</p>
+                    <p class="feature-desc">You will learn with coach everyday, and end up getting those skill</p>
+                </div> 
+            </div>
+            <div class="feature2 feature">
+                <i class="fas fa-laptop"></i>
+                <div class="desc">
+                    <p class="feature-title">Learn By Doing</p>
+                    <p class="feature-desc">You will learn and code everyday, and end up getting those skill</p>
+                </div> 
+            </div>
+            <div class="feature3 feature">
+                <i class="fas fa-medal"></i>
+                <div class="desc">
+                    <p class="feature-title">Challenge</p>
+                    <p class="feature-desc">You will get challenge everyday, and end up getting those skill</p>
+                </div> 
+            </div>
+        </div>
+
+        <div id="demo">
+            <h4>Below demo from our coach</h4>
+            <div class="video-wrapper">
+                <div class="video" id="video">
+                    <iframe width="420" height="345" src="https://www.youtube.com/embed/c-I5S_zTwAc"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="class" id="price">
+            <div class="card html">
+                <div class="head-class">
+                    <h3>HTML</h3>
+                    <p class="price">$100 / month</p>
+                </div>
+                <p class="class-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos incidunt sed animi, maiores molestiae provident accusantium doloremque nam omnis aliquid amet saepe mollitia consequuntur veniam deserunt quos tempora! Dolorem, eligendi?</p>
+                <button>SELECT</button>
+            </div>
+            <div class="card css">
+                <div class="head-class">
+                    <h3>CSS</h3>
+                    <p class="price">$100 / month</p>
+                </div>
+                <p class="class-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos incidunt sed animi, maiores molestiae provident accusantium doloremque nam omnis aliquid amet saepe mollitia consequuntur veniam deserunt quos tempora! Dolorem, eligendi?</p>
+                <button>SELECT</button>
+            </div>
+            <div class="card js">
+                <div class="head-class">
+                    <h3>JS</h3>
+                    <p class="price">$100 / month</p>
+                </div>
+                <p class="class-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos incidunt sed animi, maiores molestiae provident accusantium doloremque nam omnis aliquid amet saepe mollitia consequuntur veniam deserunt quos tempora! Dolorem, eligendi?</p>
+                <button>SELECT</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer">
+        <p>this page created by Hamid Baehaqi</p>
+    </div>
+</body>
+</html>
