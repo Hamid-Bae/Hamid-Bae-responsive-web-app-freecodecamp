@@ -4,8 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documentation</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav id="navbar">
+        <div class="wrapper">
+            <header>JS Documentation</header>
+            <ul>
+                <a class="nav-link" href="#javascript_basic"><li>What is javascript?</li></a>
+                <a class="nav-link" href="#hello_world"><li>Hello world</li></a>
+                <a class="nav-link" href="#for_loop"><li>For loop</li></a>
+                <a class="nav-link" href="#do_while"><li>Do while loop</li></a>
+                <a class="nav-link" href="#while"><li>While loop</li></a>
+                <a class="nav-link" href="#references"><li>References</li></a>
+            </ul>
+        </div>
+    </nav>
     <main id="main-doc">
         <section class="main-section" id="javascript_basic">
             <header>What is JavaScript?</header>
@@ -22,16 +36,75 @@
             <p>JavaScript is one of the most popular modern web technologies! As your JavaScript skills grow, your websites will enter a new dimension of power and creativity.</p>
             <p>However, getting comfortable with JavaScript is more challenging than getting comfortable with HTML and CSS. You may have to start small, and progress gradually. To begin, let's examine how to add JavaScript to your page for creating a Hello world! example. (Hello world! is the standard for introductory programming examples.)</p>
             <div class="note">
-                <p><strong>Important:</strong> If you haven't been following along with the rest of our course, download this example code and use it as a starting point.</p>
+                <p><strong>Important!</strong> If you haven't been following along with the rest of our course, download this example code and use it as a starting point.</p>
             </div>
             <ol>
                 <li>Go to your test site and create a new folder named <code>scripts</code>. Within the scripts folder, create a new file called <code>main.js</code>, and save it.</li>
-                <li>In your <code>index.html</code> file, enter this code on a new line, just before <p></body></p> the closing <code>&lt;/body&gt;</code> tag:p</li>
+                <li>
+                    <p>In your <code>index.html</code> file, enter this code on a new line, just before the closing <code>&lt;/body&gt;</code> tag:</p>
+                    <div class="code">
+                        <p>&lt;script src="scripts/main.js"&gt;&lt;/script&gt;</p>
+                    </div>
+                </li>
+                <li>This is doing the same job as the <code>&lt;link&gt;</code> element for CSS. It applies the JavaScript to the page, so it can have an effect on the HTML (along with the CSS, and anything else on the page).</li>
+                <li>
+                    <p>Add this code to the <code>main.js</code> file:</p>
+                    <div class="code">
+                        <p>const myHeading = document.querySelector('h1');</p>
+                        <p>myHeading.textContent = 'Hello world!';</p>
+                    </div>
+                </li>
+                <li>
+                    <p>Make sure the HTML and JavaScript files are saved. Then load index.html in your browser. You should see something like this:</p> 
+                    <img src="https://media.prod.mdn.mozit.cloud/attachments/2014/11/21/9543/3561d5218e249d28b330b94346633ed8/hello-world.png" alt="hello world">
+                </li>
             </ol>
         </section>
-        <section class="main-section"></section>
-        <section class="main-section"></section>
-        <section class="main-section"></section>
+        <section class="main-section" id="for_loop">
+            <header>For loop in javascript</header>
+            <p>A for loop repeats until a specified condition evaluates to false. The JavaScript for loop is similar to the Java and C for loop.</p>
+            <p>A for statement looks as follows:</p>
+            <div class="code">
+                <p>for ([initialExpression]; [conditionExpression]; [incrementExpression])</p>
+                <p>statement</p>
+            </div>
+            <p>When a for loop executes, the following occurs:</p>
+            <ol>
+                <li>The initializing expression initialExpression, if any, is executed. This expression usually initializes one or more loop counters, but the syntax allows an expression of any degree of complexity. This expression can also declare variables.</li>
+                <li>The conditionExpression expression is evaluated. If the value of conditionExpression is true, the loop statements execute. If the value of condition is false, the for loop terminates. (If the condition expression is omitted entirely, the condition is assumed to be true.)</li>
+                <li>The statement executes. To execute multiple statements, use a block statement <code>({ ... })</code> to group those statements.</li>
+                <li>If present, the update expression incrementExpression is executed.</li>
+                <li>Control returns to Step 2.</li>
+            </ol>
+        </section>
+        <section class="main-section" id="do_while">
+            <header>do...while statement</header>
+            <p>The do...while statement repeats until a specified condition evaluates to false.</p>
+            <p>A do...while statement looks as follows:</p>
+            <div class="code">
+                <p>do</p>
+                <p>statement</p>
+                <p>while (condition);</p>
+            </div>
+            <p>statement is always executed once before the condition is checked. (To execute multiple statements, use a block statement <code>({ ... })</code> to group those statements.)</p>
+            <p>If condition is true, the statement executes again. At the end of every execution, the condition is checked. When the condition is false, execution stops, and control passes to the statement following do...while.</p>
+        </section>
+        <section class="main-section" id="while">
+            <header>while statement</header>
+            <p>A while statement executes its statements as long as a specified condition evaluates to true.</p>
+            <p>A while statement looks as follows:</p>
+            <div class="code">
+                <p>while (condition)</p>
+                <p>statement</p>
+            </div>
+            <p>If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.</p>
+            <p>The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops, and control is passed to the statement following while.</p>
+            <p>To execute multiple statements, use a block statement <code>({ ... })</code> to group those statements.</p>
+        </section>
+        <section class="main-section" id="references">
+            <header>References</header>
+            <p>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a> </p>
+        </section>
     </main>
 </body>
 </html>
